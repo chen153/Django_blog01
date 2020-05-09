@@ -1,0 +1,32 @@
+<el-row>
+    <el-col :span="4">
+        <div class="grid-content bg-purple"></div>
+    </el-col>
+    <el-col :span="16" :offset="4">
+        <div class="grid-content bg-purple-light">
+            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" >
+                <el-menu-item index="1"><img src="/static/src/images/element_logo.svg" alt="Logo" class="blog-logo">
+                </el-menu-item>
+                <el-menu-item index="2"><a href="/">Home</a></el-menu-item>
+                <el-menu-item index="3"><a href="/blogs">My Blogs</a></el-menu-item>
+                <el-submenu index="4">
+                    <template slot="title">我的工作台</template>
+                    <el-menu-item index="4-1">选项1</el-menu-item>
+                    <el-menu-item index="4-2">选项2</el-menu-item>
+                    <el-menu-item index="4-3">选项3</el-menu-item>
+                    <el-submenu index="4-4">
+                        <template slot="title">选项4</template>
+                        <el-menu-item index="4-4-1">选项1</el-menu-item>
+                        <el-menu-item index="4-4-2">选项2</el-menu-item>
+                        <el-menu-item index="4-4-3">选项3</el-menu-item>
+                    </el-submenu>
+                </el-submenu>
+                <el-menu-item index="5" disabled>消息中心</el-menu-item>
+                <el-menu-item index="6"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+            </el-menu>
+        </div>
+    </el-col>
+    <el-col :span="4">
+        <div class="grid-content bg-purple-light"></div>
+    </el-col>
+</el-row>
